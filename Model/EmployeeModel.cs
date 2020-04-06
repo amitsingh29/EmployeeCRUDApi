@@ -9,6 +9,8 @@ namespace Model
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
     using System.Text;
 
     public class EmployeeModel
@@ -49,6 +51,8 @@ namespace Model
         /// <value>
         /// The employee identifier.
         /// </value>
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
         public int EmpID
         {
             get
@@ -156,4 +160,5 @@ namespace Model
                 this.address = value;
             }
         }
+    }
 }

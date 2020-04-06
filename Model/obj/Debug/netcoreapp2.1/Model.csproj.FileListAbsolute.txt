@@ -1,0 +1,12 @@
+F:\EmployeeCRUDApi\EmployeeLogin\Model\bin\Debug\netcoreapp2.1\Model.deps.json
+F:\EmployeeCRUDApi\EmployeeLogin\Model\bin\Debug\netcoreapp2.1\Model.runtimeconfig.json
+F:\EmployeeCRUDApi\EmployeeLogin\Model\bin\Debug\netcoreapp2.1\Model.runtimeconfig.dev.json
+F:\EmployeeCRUDApi\EmployeeLogin\Model\bin\Debug\netcoreapp2.1\Model.dll
+F:\EmployeeCRUDApi\EmployeeLogin\Model\bin\Debug\netcoreapp2.1\Model.pdb
+F:\EmployeeCRUDApi\EmployeeLogin\Model\obj\Debug\netcoreapp2.1\Model.csprojAssemblyReference.cache
+F:\EmployeeCRUDApi\EmployeeLogin\Model\obj\Debug\netcoreapp2.1\Model.csproj.CoreCompileInputs.cache
+F:\EmployeeCRUDApi\EmployeeLogin\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfoInputs.cache
+F:\EmployeeCRUDApi\EmployeeLogin\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfo.cs
+F:\EmployeeCRUDApi\EmployeeLogin\Model\obj\Debug\netcoreapp2.1\Model.dll
+F:\EmployeeCRUDApi\EmployeeLogin\Model\obj\Debug\netcoreapp2.1\Model.pdb
+F:\EmployeeCRUDApi\EmployeeLogin\Model\obj\Debug\netcoreapp2.1\Model.genruntimeconfig.cache

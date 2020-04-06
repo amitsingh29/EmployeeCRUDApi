@@ -1,0 +1,15 @@
+F:\EmployeeCRUDApi\EmployeeLogin\Repository\bin\Debug\netcoreapp2.1\Repository.deps.json
+F:\EmployeeCRUDApi\EmployeeLogin\Repository\bin\Debug\netcoreapp2.1\Repository.runtimeconfig.json
+F:\EmployeeCRUDApi\EmployeeLogin\Repository\bin\Debug\netcoreapp2.1\Repository.runtimeconfig.dev.json
+F:\EmployeeCRUDApi\EmployeeLogin\Repository\bin\Debug\netcoreapp2.1\Repository.dll
+F:\EmployeeCRUDApi\EmployeeLogin\Repository\bin\Debug\netcoreapp2.1\Repository.pdb
+F:\EmployeeCRUDApi\EmployeeLogin\Repository\bin\Debug\netcoreapp2.1\Model.dll
+F:\EmployeeCRUDApi\EmployeeLogin\Repository\bin\Debug\netcoreapp2.1\Model.pdb
+F:\EmployeeCRUDApi\EmployeeLogin\Repository\obj\Debug\netcoreapp2.1\Repository.csprojAssemblyReference.cache
+F:\EmployeeCRUDApi\EmployeeLogin\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CoreCompileInputs.cache
+F:\EmployeeCRUDApi\EmployeeLogin\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfoInputs.cache
+F:\EmployeeCRUDApi\EmployeeLogin\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfo.cs
+F:\EmployeeCRUDApi\EmployeeLogin\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
+F:\EmployeeCRUDApi\EmployeeLogin\Repository\obj\Debug\netcoreapp2.1\Repository.dll
+F:\EmployeeCRUDApi\EmployeeLogin\Repository\obj\Debug\netcoreapp2.1\Repository.pdb
+F:\EmployeeCRUDApi\EmployeeLogin\Repository\obj\Debug\netcoreapp2.1\Repository.genruntimeconfig.cache
