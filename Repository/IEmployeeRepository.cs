@@ -48,5 +48,7 @@ namespace Repository
         /// <param name="id">The identifier.</param>
         /// <returns>employee model type</returns>
         EmployeeModel DeleteEmployee(int id);
+
+        bool LoginEmployee(string email, string password);
     }
 }
