@@ -12,6 +12,7 @@ namespace Repository
     using Serilog;
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
 
@@ -99,6 +100,17 @@ namespace Repository
             employee.State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             var result = this.userDBContext.SaveChangesAsync();
             return result;
+        }
+
+        public bool LoginEmployee(string email, string password)
+        {
+            var result = userDBContext.Employees.Where(id => id.Email == email && id.Password == password);
+
+            if (result != null)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
