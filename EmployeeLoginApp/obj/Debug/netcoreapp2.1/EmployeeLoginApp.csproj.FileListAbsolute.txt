@@ -13,7 +13,6 @@ F:\EmployeeCRUDApi\EmployeeLogin\EmployeeLoginApp\bin\Debug\netcoreapp2.1\Manage
 F:\EmployeeCRUDApi\EmployeeLogin\EmployeeLoginApp\bin\Debug\netcoreapp2.1\Repository.pdb
 F:\EmployeeCRUDApi\EmployeeLogin\EmployeeLoginApp\bin\Debug\netcoreapp2.1\Model.pdb
 F:\EmployeeCRUDApi\EmployeeLogin\EmployeeLoginApp\obj\Debug\netcoreapp2.1\EmployeeLoginApp.csprojAssemblyReference.cache
-F:\EmployeeCRUDApi\EmployeeLogin\EmployeeLoginApp\obj\Debug\netcoreapp2.1\EmployeeLoginApp.csproj.CoreCompileInputs.cache
 F:\EmployeeCRUDApi\EmployeeLogin\EmployeeLoginApp\obj\Debug\netcoreapp2.1\EmployeeLoginApp.RazorAssemblyInfo.cache
 F:\EmployeeCRUDApi\EmployeeLogin\EmployeeLoginApp\obj\Debug\netcoreapp2.1\EmployeeLoginApp.RazorAssemblyInfo.cs
 F:\EmployeeCRUDApi\EmployeeLogin\EmployeeLoginApp\obj\Debug\netcoreapp2.1\EmployeeLoginApp.AssemblyInfoInputs.cache

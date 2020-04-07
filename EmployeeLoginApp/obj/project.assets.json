@@ -12220,6 +12220,7 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
       "Repository >= 1.0.0",
+      "Serilog >= 2.1.0",
       "Swashbuckle.AspNetCore >= 5.3.1"
     ]
   },
@@ -12283,6 +12284,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "Serilog": {
+            "target": "Package",
+            "version": "[2.1.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

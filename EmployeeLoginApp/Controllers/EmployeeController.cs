@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Manager;
 using Microsoft.AspNetCore.Mvc;
 using Model;
+using Serilog;
 
 namespace EmployeeLoginApp.Controllers
 {
@@ -42,6 +43,7 @@ namespace EmployeeLoginApp.Controllers
             }
             else
             {
+                Log.Error("This is a Bad Request");
                 return this.BadRequest();
             }
         }
@@ -73,6 +75,7 @@ namespace EmployeeLoginApp.Controllers
             }
             else
             {
+                Log.Error("This is a Bad Request");
                 return this.BadRequest();
             }
         }
@@ -101,6 +104,7 @@ namespace EmployeeLoginApp.Controllers
         [Route("DeleteEmployee")]
         public EmployeeModel DeleteEmployee(int id)
         {
+            Log.Information("Employee Deleted");
             return this.manager.DeleteEmployee(id);
         }
 
