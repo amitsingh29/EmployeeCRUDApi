@@ -48,5 +48,7 @@ namespace Manager
         /// <param name="id">The identifier.</param>
         /// <returns>employee model</returns>
         EmployeeModel DeleteEmployee(int id);
+
+        bool LoginEmployee(string email, string password);
     }
 }
