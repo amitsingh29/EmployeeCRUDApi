@@ -81,5 +81,10 @@ namespace Manager
 
             return result;
         }
+
+        public bool LoginEmployee(string email, string password)
+        {
+            return this.repo.LoginEmployee(email, password);
+        }
     }
 }
