@@ -1,50 +1,44 @@
-﻿?<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="StyleSheet1.css">
-    <title>Bootstrap Logic</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
-
+    <link rel="stylesheet" type="text/css" href="Main.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <title></title>
+    <title>Home</title>
 </head>
-<body>
-<div class="jumbotron" style="margin-bottom:0px">
-<h1>Welcome To Employee Information</h1>
-</div>
-
-<a class="navbar-brand"><img src=""></a>
-<span class="navbar-text"></span>
-<nav class="navbar navbar-expand-md navbad-dark bg-dark fixed-top">
-<div class="collapse navbar-collapse " id="nav">
-<ul class="navbar-nav">
-<li class="nav-item">
-<a class="nav-link" href="#">Home</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Register</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#">Login</a>
-</li>
-</ul>
-</div>
-</nav>
-<button type="button" class="btn btn-primary btn-sm">Add Employee</button>
+<body style="background-image:url(background.jpg)">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+        <div class="collapse navbar-collapse " id="nav">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="registration.html" class="nav-link">Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <button class=" fa fa-user-plus btn btn-primary" id="employeebtn">Add Employee</button>
     <div class="container">
-   <p class="text-black display-4"> NO RECORD FOUND !!</p>
-</div>
+        <p class="text-white display-4"> NO RECORD FOUND !!</p>
+    </div>
     <div class="container">
         <table class="table table-hover bg-light">
             <thead>
                 <tr>
-                    <th>Firstname</th>
-                    <th>Lastname</th>
+                    <th>name</th>
                     <th>Email</th>
+                    <th>password</th>
+                    <th>phone</th>
+                    <th>Address</th>
                     <th>Edit</th>
                     <th>Delete</th>
                 </tr>
@@ -53,5 +47,34 @@
             </tbody>
         </table>
     </div>
+    <script>
+
+        var xHttp = new XMLHttpRequest();
+        xHttp.open("GET", 'https://localhost:44349/api/employee/GetAllEmployee');
+        xHttp.onload = function () {
+
+            var data = JSON.parse(xHttp.responseText);
+            console.log(data);
+            var html = "";
+            for (var a = 0; a < data.length; a++) {
+                var name = data[a].name;
+                var email = data[a].email;
+                var password = data[a].password;
+                var mobile = data[a].mobile;
+                var address = data[a].address;
+
+                html += "<tr>";
+                html += "<td>" + naame + "</td>";
+                html += "<td>" + email + "</td>";
+                html += "<td>" + password + "</td>";
+                html += "<td>" + mobile + "</td>";
+                html += "<td>" + address + "</td>";
+                html += "</tr>";
+            }
+            document.getElementById("data").innerHTML += html;
+        }
+        xHttp.send();
+    </script>
+
 </body>
-</html>
+</html> 
