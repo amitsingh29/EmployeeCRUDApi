@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\QuantityMeasurementBackend\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "E:\\QuantityMeasurementBackend\\Model\\Model.csproj": {}
   },
   "projects": {
-    "E:\\QuantityMeasurementBackend\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "E:\\QuantityMeasurementBackend\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\QuantityMeasurementBackend\\ConsoleApp1\\ConsoleApp1.csproj",
-        "projectName": "ConsoleApp1",
-        "projectPath": "E:\\QuantityMeasurementBackend\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "E:\\QuantityMeasurementBackend\\Model\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "E:\\QuantityMeasurementBackend\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\Amit Singh\\.nuget\\packages\\",
-        "outputPath": "E:\\QuantityMeasurementBackend\\ConsoleApp1\\obj\\",
+        "outputPath": "E:\\QuantityMeasurementBackend\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Amit Singh\\AppData\\Roaming\\NuGet\\NuGet.Config",
