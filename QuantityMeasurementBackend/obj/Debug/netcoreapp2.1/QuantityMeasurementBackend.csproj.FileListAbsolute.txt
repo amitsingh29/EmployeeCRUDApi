@@ -1,0 +1,14 @@
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\bin\Debug\netcoreapp2.1\appsettings.Development.json
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\bin\Debug\netcoreapp2.1\appsettings.json
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\bin\Debug\netcoreapp2.1\QuantityMeasurementBackend.deps.json
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\bin\Debug\netcoreapp2.1\QuantityMeasurementBackend.runtimeconfig.json
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\bin\Debug\netcoreapp2.1\QuantityMeasurementBackend.runtimeconfig.dev.json
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\bin\Debug\netcoreapp2.1\QuantityMeasurementBackend.dll
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\obj\Debug\netcoreapp2.1\QuantityMeasurementBackend.csprojAssemblyReference.cache
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\obj\Debug\netcoreapp2.1\QuantityMeasurementBackend.RazorAssemblyInfo.cache
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\obj\Debug\netcoreapp2.1\QuantityMeasurementBackend.RazorAssemblyInfo.cs
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\obj\Debug\netcoreapp2.1\QuantityMeasurementBackend.AssemblyInfoInputs.cache
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\obj\Debug\netcoreapp2.1\QuantityMeasurementBackend.AssemblyInfo.cs
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\obj\Debug\netcoreapp2.1\QuantityMeasurementBackend.RazorTargetAssemblyInfo.cache
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\obj\Debug\netcoreapp2.1\QuantityMeasurementBackend.genruntimeconfig.cache
