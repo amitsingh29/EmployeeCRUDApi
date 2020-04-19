@@ -18,5 +18,6 @@ namespace Repository
         decimal KilogramToGram(QuantityModel value);
 
         decimal GramToKilogram(QuantityModel value);
+
     }
 }
