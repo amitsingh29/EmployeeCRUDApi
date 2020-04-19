@@ -61,3 +61,4 @@ class Login extends Component
         )
     }
 }
+export default Component;
