@@ -11,9 +11,9 @@ namespace Repository
 
         decimal InchToFeet(QuantityModel value);
 
-        decimal MetertoCentimeter(QuantityModel value);
+        decimal MeterToCentimeter(QuantityModel value);
 
-        decimal CentimetertoMeter(QuantityModel value);
+        decimal CentimeterToMeter(QuantityModel value);
 
         decimal KilogramToGram(QuantityModel value);
 
