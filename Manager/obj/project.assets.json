@@ -217,6 +217,19 @@
         "runtime": {
           "bin/placeholder/Model.dll": {}
         }
+      },
+      "Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repository.dll": {}
+        }
       }
     }
   },
@@ -696,12 +709,18 @@
       "type": "project",
       "path": "../Model/Model.csproj",
       "msbuildProject": "../Model/Model.csproj"
+    },
+    "Repository/1.0.0": {
+      "type": "project",
+      "path": "../Repository/Repository.csproj",
+      "msbuildProject": "../Repository/Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.NETCore.App >= 2.1.0",
-      "Model >= 1.0.0"
+      "Model >= 1.0.0",
+      "Repository >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -732,6 +751,9 @@
           "projectReferences": {
             "E:\\QuantityMeasurementBackend\\Model\\Model.csproj": {
               "projectPath": "E:\\QuantityMeasurementBackend\\Model\\Model.csproj"
+            },
+            "E:\\QuantityMeasurementBackend\\Repository\\Repository.csproj": {
+              "projectPath": "E:\\QuantityMeasurementBackend\\Repository\\Repository.csproj"
             }
           }
         }
