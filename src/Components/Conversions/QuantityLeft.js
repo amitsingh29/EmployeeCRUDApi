@@ -4,8 +4,8 @@ class QuantityLeft extends Component{
     render(){
         return(
             <div className='col-md m-5' id='main-label'>
-                <input type='text' className="form-control form-control-md" onChange={this.props.quantityLeft} />
-                <select name="quantityType" id="quantityType" className='form-control'  onChange={this.props.selectQuantityLeft}>
+                <input type='text' className="form-control form-control-md" onChange={this.props.inputTypeLeft} />
+                <select name="quantityType" id="quantityType" className='form-control'  onChange={this.props.selectTypeLeft}>
                 <option value="-1" selected>Select</option>
                 
                 {

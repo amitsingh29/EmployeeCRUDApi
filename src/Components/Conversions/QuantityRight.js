@@ -3,8 +3,8 @@ class QuantityRight extends Component{
     render(){
         return(
             <div className='col-md m-5' id='main-label'>
-                <input type='text' className="form-control form-control-md" onChange={this.props.inputTypeRight} value={this.props.quantityRight} />
-                <select name="quantityType" id="quantityType" className='form-control'  onChange={this.props.selectQuantityRight}>
+                <input type='text' className="form-control form-control-md" onChange={this.props.inputTypeRight} value={this.props.valueRight} />
+                <select name="quantityType" id="quantityType" className='form-control'  onChange={this.props.selectTypeRight}>
                 <option value="-1" selected>Select</option>
                 
                 {
