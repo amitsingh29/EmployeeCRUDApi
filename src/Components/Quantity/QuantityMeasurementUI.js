@@ -136,11 +136,11 @@ class QuantityMeasurementUI extends Component {
 
     render() {
         return (
-            <div className='container m-5 d-flex justify-content-center' id='main-div'>
+            <div className='main-div'>
                 <QuantityType measurementTypeChanged={this.measurementTypeHandler} />
-                <div className='row' id='main-typeconversion-div'>
+                <div className='row'>
                     <QuantityLeft inputTypeLeft={this.inputTypeLeftChangeHandler} selectTypeLeft={this.selectTypeLeftChangeHandler} showType={this.state.showType} />
-                    <FaEquals id='equalIcon' />
+                <FaEquals className="equals-icon" />
                     <QuantityRight inputTypeRight={this.inputTypeRightChangeHandler} selectTypeRight={this.selectTypeRightChangeHandler}  valueRight={this.state.inputTypeRight} showType={this.state.showType} />
                 </div>
                 <Formula selectTypeLeft={this.state.selectTypeLeft} selectTypeRight={this.state.selectTypeRight}/>

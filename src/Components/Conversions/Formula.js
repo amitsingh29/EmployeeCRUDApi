@@ -4,7 +4,7 @@ class Formula extends Component {
 render(){
     return (
         
-        <div>
+        <div className="formula-div">
         <label  id='formula-label'>Formula</label>
         {
             (this.props.selectTypeLeft==="Meter" && this.props.selectTypeRight==="Centimeter") ? 
