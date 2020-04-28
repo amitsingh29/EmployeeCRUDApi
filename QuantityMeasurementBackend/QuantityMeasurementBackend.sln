@@ -3,13 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuantityMeasurementBackend", "QuantityMeasurementBackend.csproj", "{81408EA6-4585-4BF1-86D9-1FA72379A6C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuantityMeasurementBackend", "QuantityMeasurementBackend.csproj", "{81408EA6-4585-4BF1-86D9-1FA72379A6C4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DE8A0801-B6D9-4C9B-B824-91E41ECDAE5F} = {DE8A0801-B6D9-4C9B-B824-91E41ECDAE5F}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "..\Repository\Repository.csproj", "{DE8A0801-B6D9-4C9B-B824-91E41ECDAE5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "..\Repository\Repository.csproj", "{DE8A0801-B6D9-4C9B-B824-91E41ECDAE5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "..\Model\Model.csproj", "{6C0F30BD-3DEC-4B86-B24A-7A161FEC3F9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "..\Model\Model.csproj", "{6C0F30BD-3DEC-4B86-B24A-7A161FEC3F9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager", "..\Manager\Manager.csproj", "{4C9794AE-4634-4099-B5E2-35B3B0FF0210}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Manager", "..\Manager\Manager.csproj", "{4C9794AE-4634-4099-B5E2-35B3B0FF0210}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

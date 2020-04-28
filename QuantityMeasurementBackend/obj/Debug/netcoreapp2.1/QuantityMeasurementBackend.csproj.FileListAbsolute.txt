@@ -12,3 +12,14 @@ E:\QuantityMeasurementBackend\QuantityMeasurementBackend\obj\Debug\netcoreapp2.1
 E:\QuantityMeasurementBackend\QuantityMeasurementBackend\obj\Debug\netcoreapp2.1\QuantityMeasurementBackend.AssemblyInfo.cs
 E:\QuantityMeasurementBackend\QuantityMeasurementBackend\obj\Debug\netcoreapp2.1\QuantityMeasurementBackend.RazorTargetAssemblyInfo.cache
 E:\QuantityMeasurementBackend\QuantityMeasurementBackend\obj\Debug\netcoreapp2.1\QuantityMeasurementBackend.genruntimeconfig.cache
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\bin\Debug\netcoreapp2.1\QuantityMeasurementBackend.pdb
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\bin\Debug\netcoreapp2.1\Manager.dll
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\bin\Debug\netcoreapp2.1\Model.dll
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\bin\Debug\netcoreapp2.1\Repository.dll
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\bin\Debug\netcoreapp2.1\Manager.pdb
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\bin\Debug\netcoreapp2.1\Model.pdb
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\bin\Debug\netcoreapp2.1\Repository.pdb
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\obj\Debug\netcoreapp2.1\QuantityMeasurementBackend.csproj.CopyComplete
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\obj\Debug\netcoreapp2.1\QuantityMeasurementBackend.dll
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\obj\Debug\netcoreapp2.1\QuantityMeasurementBackend.pdb
+E:\QuantityMeasurementBackend\QuantityMeasurementBackend\obj\Debug\netcoreapp2.1\QuantityMeasurementBackend.csproj.CoreCompileInputs.cache
