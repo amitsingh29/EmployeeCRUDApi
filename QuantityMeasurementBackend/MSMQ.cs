@@ -4,32 +4,65 @@ using System.Linq;
 using System.Threading.Tasks;
 using Experimental.System.Messaging;
 
-namespace QuantityMeasurementBackend
+namespace QuantityMeasurementBacken
 {
     public class MSMQ
     {
-
-        public void sendMessageToQueue()
+        public void sendMessage(string message, decimal value)
         {
-            string queueName = @".\private$\TestQueue"; 
-            MessageQueue msMq = null;
-
-            if (MessageQueue.Exists(queueName))
-
+            MessageQueue messageQueue = null;
+            string description = message;
+            string path = @".\Privates$\temp";
+            try
             {
+                if(MessageQueue.Exists(path))
+                {
+                    messageQueue = new MessageQueue(path);
+                }
 
-                msMq = new MessageQueue(queueName);
-
+                else
+                {
+                    MessageQueue.Create(path);
+                    messageQueue = new MessageQueue(path);
+                }
+                string result = message + value;
+                messageQueue.Send(result, description);
             }
-
-            else
-
+            catch
             {
-                MessageQueue.Create(queueName);
-                msMq = new MessageQueue(queueName);
-
+                throw;
             }
-            msMq.Send("Hello");
+        }
+        public void receiveMessage()
+        {
+            MessageQueue m = new MessageQueue();
+            MessageQueue MyQueue = null;
+            string path = @".\Private$\temp";
+            try
+            {
+                MyQueue = new MessageQueue(path);
+                Message[] message = MyQueue.GetAllMessages();
+                if (message.Length > 0)
+                {
+                    foreach (Message msg in message)
+                    {
+                        msg.Formatter = new XmlMessageFormatter(new string[] { "System.String,mscorlib" });
+                        string result = msg.Body.ToString();
+                        Console.WriteLine(result);
+                        MyQueue.Receive();
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("No Message");
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }
+   
+
