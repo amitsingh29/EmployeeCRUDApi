@@ -19,5 +19,13 @@ namespace QuantityNUnit
             int expected = feet1.ConvertFeetToInch();
             Assert.AreEqual(expected, result);
         }
+
+        [Test]
+        public void GivenNullTo_EqualsMethod_WhenAnalyse_ReturnTrue()
+        {
+            UnitCheck feet = new UnitCheck("Feet");
+            bool actual = feet.Equals(null);
+            Assert.IsTrue(actual);
+        }
     }
 }
