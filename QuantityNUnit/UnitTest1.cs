@@ -36,5 +36,14 @@ namespace QuantityNUnit
             Assert.IsTrue(actual);
         }
 
+        [Test]
+        public void GivenObjectType_WhenAnalyse_ReturnTrue()
+        {
+
+            UnitCheck feet = new UnitCheck("Feet");
+            bool result = feet.Equals(new UnitCheck());
+            Assert.IsTrue(result);
+        }
+
     }
 }
