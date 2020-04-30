@@ -45,5 +45,14 @@ namespace QuantityNUnit
             Assert.IsTrue(result);
         }
 
+        [Test]
+        public void GivenValueToFeetClass_WhenAnalyse_ReturnEqual()
+        {
+            UnitCheck feet = new UnitCheck("Feet", 5);
+            int actual = feet.EqualsValue();
+            int expected = 5;
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 }
