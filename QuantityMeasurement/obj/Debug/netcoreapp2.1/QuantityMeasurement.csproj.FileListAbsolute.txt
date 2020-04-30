@@ -1,0 +1,12 @@
+E:\Quantity\QuantityMeasurement\bin\Debug\netcoreapp2.1\QuantityMeasurement.deps.json
+E:\Quantity\QuantityMeasurement\bin\Debug\netcoreapp2.1\QuantityMeasurement.runtimeconfig.json
+E:\Quantity\QuantityMeasurement\bin\Debug\netcoreapp2.1\QuantityMeasurement.runtimeconfig.dev.json
+E:\Quantity\QuantityMeasurement\bin\Debug\netcoreapp2.1\QuantityMeasurement.dll
+E:\Quantity\QuantityMeasurement\bin\Debug\netcoreapp2.1\QuantityMeasurement.pdb
+E:\Quantity\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.csprojAssemblyReference.cache
+E:\Quantity\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.csproj.CoreCompileInputs.cache
+E:\Quantity\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.AssemblyInfoInputs.cache
+E:\Quantity\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.AssemblyInfo.cs
+E:\Quantity\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.dll
+E:\Quantity\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.pdb
+E:\Quantity\QuantityMeasurement\obj\Debug\netcoreapp2.1\QuantityMeasurement.genruntimeconfig.cache
