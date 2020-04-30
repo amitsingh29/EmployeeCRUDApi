@@ -88,5 +88,15 @@ namespace QuantityNUnit
             Assert.IsTrue(actual);
         }
 
+
+        [Test]
+        public void GivenValueTo_InchClass_WhenAnalyse_ReturnEqual()
+        {
+            UnitCheck inch = new UnitCheck(10);
+            int actual = inch.EqualsValue();
+            int expected = 10;
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 }
