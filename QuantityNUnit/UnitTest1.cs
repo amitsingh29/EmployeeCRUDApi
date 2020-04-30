@@ -98,5 +98,15 @@ namespace QuantityNUnit
             Assert.AreEqual(expected, actual);
         }
 
+        [Test]
+        public void Give_15_Feet_and_15_Inch_Should_Return_Equal()
+        {
+            UnitCheck feet = new UnitCheck("Feet", 15);
+            int expected = feet.EqualsValue();
+            UnitCheck inch = new UnitCheck("Inch", 15);
+            int actual = inch.EqualsValue();
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 }
