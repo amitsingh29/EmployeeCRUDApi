@@ -138,6 +138,15 @@ namespace QuantityNUnit
             Assert.AreNotEqual(expected, actual);
         }
 
+        [Test]
+        public void Compare_1Feet_Equal_to_12_inch_return_True()
+        {
+            UnitCheck feet = new UnitCheck("Feet", 1);
+            int actual = feet.ConvertFeetToInch();
+            Inch inch = new Inch(12);
+            int expected = inch.CheckInch_Value();
+            Assert.AreEqual(expected, actual);
+        }
 
     }
 }
