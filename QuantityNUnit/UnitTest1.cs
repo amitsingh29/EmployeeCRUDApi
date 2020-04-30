@@ -157,5 +157,15 @@ namespace QuantityNUnit
             int expected = feet.ConvertFeetToInch();
             Assert.AreEqual(expected, actual);
         }
+
+        [Test]
+        public void Compare_1kg_Equal_to_1000gm_return_True()
+        {
+            UnitCheck kg = new UnitCheck("Kilogram", 1);
+            double actual = kg.KgtoGram();
+            Gram gm = new Gram(1000);
+            int expected = gm.EqualsValue();
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
