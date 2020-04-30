@@ -71,5 +71,13 @@ namespace QuantityNUnit
             bool actual = inch.Equals(null);
             Assert.IsTrue(actual);
         }
+
+        [Test]
+        public void GivenReferenceTo_InchClassEqualsMethod_WhenAnalyse_ReturnTrue()
+        {
+            UnitCheck inch = new UnitCheck("Inch");
+            bool actual = inch.Equals(inch);
+            Assert.IsTrue(actual);
+        }
     }
 }
