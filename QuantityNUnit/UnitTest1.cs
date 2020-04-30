@@ -167,5 +167,16 @@ namespace QuantityNUnit
             int expected = gm.EqualsValue();
             Assert.AreEqual(expected, actual);
         }
+
+
+        [Test]
+        public void Compare_1_Gram_Equal_to_1_Gram_return_True()
+        {
+            UnitCheck gram = new UnitCheck("Gram", 1);
+            double actual = gram.EqualsValue();
+            Gram gm = new Gram(1);
+            int expected = gm.EqualsValue();
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
