@@ -188,5 +188,26 @@ namespace QuantityNUnit
             int expected = cel.EqualsValue();
             Assert.AreEqual(expected, actual);
         }
+
+        [Test]
+        public void Compare_1_Celcius_NotEqual_to_2_Celcius_return_False()
+        {
+            UnitCheck celcius = new UnitCheck("Celcius", 1);
+            int actual = celcius.EqualsValue();
+            Celcius cel = new Celcius(2);
+            int expected = cel.EqualsValue();
+            Assert.AreNotEqual(expected, actual);
+        }
+
+        [Test]
+        public void GiveCelciusValueAs1_WhenCalculate_ShouldReturnFalse()
+        {
+            UnitCheck celcius = new UnitCheck("Celcius", 1);
+            double actual = celcius.CelciustoFarenheit();
+            Farenheit farenheit = new Farenheit(1);
+            double expected = farenheit.EqualsValue();
+            Assert.AreNotEqual(expected, actual);
+        }
+
     }
 }
