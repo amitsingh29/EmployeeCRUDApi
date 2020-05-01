@@ -178,5 +178,15 @@ namespace QuantityNUnit
             int expected = gm.EqualsValue();
             Assert.AreEqual(expected, actual);
         }
+
+        [Test]
+        public void Compare_1_Celcius_Equal_to_1_Celcius_return_True()
+        {
+            UnitCheck celcius = new UnitCheck("Celcius", 1);
+            int actual = celcius.EqualsValue();
+            Celcius cel = new Celcius(1);
+            int expected = cel.EqualsValue();
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
