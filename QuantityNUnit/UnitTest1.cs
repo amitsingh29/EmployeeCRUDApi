@@ -209,5 +209,15 @@ namespace QuantityNUnit
             Assert.AreNotEqual(expected, actual);
         }
 
+        [Test]
+        public void Given1Celcius_Equalto_33FhreturnTrue()
+        {
+            UnitCheck celcius = new UnitCheck("Celcius", 1);
+            double actual = celcius.CelciustoFarenheit();
+            Farenheit farenheit = new Farenheit(33.8);
+            double expected = farenheit.EqualsValue();
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 }
