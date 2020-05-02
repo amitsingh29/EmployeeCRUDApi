@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -15,36 +13,7 @@ namespace QuantityMeasurementBackend
     public class Program
     {
         public static void Main(string[] args)
-        {
-            Message[] messages = null;
-            MessageQueue[] QueueList = MessageQueue.GetPrivateQueuesByMachine(".");
-            try
-            {
-                foreach (MessageQueue queue in QueueList)
-                {
-                    messages = queue.GetAllMessages();
-                    if (messages.Length > 0)
-                    {
-                        foreach (Message m in messages)
-                        {
-                            m.Formatter = new XmlMessageFormatter(new String[] { "System.String,mscorlib" });
-                            object val = queue.Receive();
-                            File.WriteAllText(@"C:\Users\admin\Desktop\QuantityMeasurement_Backend\Quantity_Measurement_Backend\Receive.txt", val.ToString());
-
-                        }
-
-                    }
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-            finally
-            {
-                Queue.Dispose();
-            }
-            
+        {   
             MessageQueue MyQueue = null;
             string path = @".\Private$\temp";
             try
@@ -58,7 +27,7 @@ namespace QuantityMeasurementBackend
                         msg.Formatter = new XmlMessageFormatter(new string[] { "System.String,mscorlib" });
                         string result = msg.Body.ToString();
                         MyQueue.Receive();
-                        File.WriteAllText(@"C:\Users\admin\Desktop\QuantityMeasurement_Backend\Quantity_Measurement_Backend\Receive.txt", result);
+                        File.WriteAllText(@"E:\QuantityMeasurementBackend\QuantityMeasurementBackend\Sender.txt", result);
                     }
                     MyQueue.Refresh();
                 }

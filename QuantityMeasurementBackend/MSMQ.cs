@@ -8,14 +8,14 @@ namespace QuantityMeasurementBacken
 {
     public class MSMQ
     {
-        public void sendMessage(string message, decimal value)
+        public void SendingTheMessage(string quantityMeasurementType, decimal value)
         {
             MessageQueue messageQueue = null;
-            string description = message;
-            string path = @".\Privates$\temp";
+            string description = quantityMeasurementType;
+            string path = @".\Private$\quantityQueue";
             try
             {
-                if(MessageQueue.Exists(path))
+                if (MessageQueue.Exists(path))
                 {
                     messageQueue = new MessageQueue(path);
                 }
@@ -25,7 +25,7 @@ namespace QuantityMeasurementBacken
                     MessageQueue.Create(path);
                     messageQueue = new MessageQueue(path);
                 }
-                string result = message + value;
+                string result = quantityMeasurementType + value;
                 messageQueue.Send(result, description);
             }
             catch
@@ -33,11 +33,12 @@ namespace QuantityMeasurementBacken
                 throw;
             }
         }
-        public void receiveMessage()
+    
+        public void ReceivingTheMessage()
         {
             MessageQueue m = new MessageQueue();
             MessageQueue MyQueue = null;
-            string path = @".\Private$\temp";
+            string path = @".\Private$\quantityQueue";
             try
             {
                 MyQueue = new MessageQueue(path);

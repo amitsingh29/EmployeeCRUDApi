@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Experimental.System.Messaging;
 using Manager;
 using Microsoft.AspNetCore.Mvc;
 using Model;
+using QuantityMeasurementBacken;
 
 namespace QuantityMeasurementBackend.Controllers
 {
@@ -12,7 +14,7 @@ namespace QuantityMeasurementBackend.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-
+        MSMQ messagingQueue = new MSMQ();
         public IManager manager;
 
         public ValuesController(IManager manager)
@@ -28,7 +30,10 @@ namespace QuantityMeasurementBackend.Controllers
 
             if (result >= 0)
             {
+                messagingQueue.sendMessage("Feet", result);
                 return this.Ok(result);
+                
+
             }
             return this.BadRequest();
         }
@@ -42,6 +47,7 @@ namespace QuantityMeasurementBackend.Controllers
 
             if (result >= 0)
             {
+                messagingQueue.sendMessage("Inch= ", result);
                 return this.Ok(result);
             }
             return this.BadRequest();
@@ -68,7 +74,10 @@ namespace QuantityMeasurementBackend.Controllers
 
             if (result >= 0)
             {
+                messagingQueue.sendMessage("Centimeter= ", result);
                 return this.Ok(result);
+                
+
             }
             return this.BadRequest();
         }
@@ -81,7 +90,10 @@ namespace QuantityMeasurementBackend.Controllers
 
             if (result >= 0)
             {
+                messagingQueue.sendMessage("Kg= ", result);
                 return this.Ok(result);
+               
+
             }
             return this.BadRequest();
         }
@@ -94,7 +106,10 @@ namespace QuantityMeasurementBackend.Controllers
 
             if (result >= 0)
             {
+                messagingQueue.sendMessage("Gram= ", result);
                 return this.Ok(result);
+               
+
             }
             return this.BadRequest();
         }
