@@ -50,6 +50,10 @@
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.1.30, )"
             }
           },
           "imports": [
@@ -105,6 +109,10 @@
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.1.30, )"
             }
           },
           "imports": [
@@ -162,10 +170,6 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
-            "Experimental.System.Messaging": {
-              "target": "Package",
-              "version": "[1.1.0, )"
-            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -182,6 +186,10 @@
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.1.30, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -245,6 +253,10 @@
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.1.30, )"
             }
           },
           "imports": [

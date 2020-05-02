@@ -30,7 +30,7 @@ namespace QuantityMeasurementBackend.Controllers
 
             if (result >= 0)
             {
-                messagingQueue.sendMessage("Feet", result);
+                messagingQueue.SendingTheMessage("Feet", result);
                 return this.Ok(result);
                 
 
@@ -47,7 +47,7 @@ namespace QuantityMeasurementBackend.Controllers
 
             if (result >= 0)
             {
-                messagingQueue.sendMessage("Inch= ", result);
+                messagingQueue.SendingTheMessage("Inch= ", result);
                 return this.Ok(result);
             }
             return this.BadRequest();
@@ -74,7 +74,7 @@ namespace QuantityMeasurementBackend.Controllers
 
             if (result >= 0)
             {
-                messagingQueue.sendMessage("Centimeter= ", result);
+                messagingQueue.SendingTheMessage("Centimeter= ", result);
                 return this.Ok(result);
                 
 
@@ -90,7 +90,7 @@ namespace QuantityMeasurementBackend.Controllers
 
             if (result >= 0)
             {
-                messagingQueue.sendMessage("Kg= ", result);
+                messagingQueue.SendingTheMessage("Kg= ", result);
                 return this.Ok(result);
                
 
@@ -106,7 +106,7 @@ namespace QuantityMeasurementBackend.Controllers
 
             if (result >= 0)
             {
-                messagingQueue.sendMessage("Gram= ", result);
+                messagingQueue.SendingTheMessage("Gram= ", result);
                 return this.Ok(result);
                
 

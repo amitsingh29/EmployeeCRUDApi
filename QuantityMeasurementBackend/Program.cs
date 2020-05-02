@@ -13,9 +13,10 @@ namespace QuantityMeasurementBackend
     public class Program
     {
         public static void Main(string[] args)
-        {   
+        {
+            BuildWebHost(args).Run();
             MessageQueue MyQueue = null;
-            string path = @".\Private$\temp";
+            string path = @".\Private$\quantityQueue";
             try
             {
                 MyQueue = new MessageQueue(path);
@@ -40,8 +41,6 @@ namespace QuantityMeasurementBackend
             {
                 Console.WriteLine(e.Message);
             }
-
-            BuildWebHost(args).Run();
         }
         public static IWebHost BuildWebHost(string[] args) =>
                 WebHost.CreateDefaultBuilder(args)
