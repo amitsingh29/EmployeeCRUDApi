@@ -7,35 +7,47 @@ namespace Repository
 {
     public class QuantityRepository : IRepository
     {
+        RedisData redisData = new RedisData();
+            
         public decimal FeetToInch(QuantityModel value)
         {
-            return value.Feet * 12;
+            decimal result = value.Feet * 12;
+            redisData.RedisConnectionMultiplexer($"Meter", result.ToString());
+            return result;
         }
 
         public decimal InchToFeet(QuantityModel value)
         {
-            return value.Inch / 12;
+            decimal result = value.Inch / 12;
+            redisData.RedisConnectionMultiplexer($"Meter", result.ToString());
+            return result;
         }
-
         public decimal GramToKilogram(QuantityModel value)
         {
-            return value.Gram / 1000;
+            decimal result = value.Gram / 1000;
+            redisData.RedisConnectionMultiplexer($"Meter", result.ToString());
+            return result;
         }
 
         public decimal MeterToCentimeter(QuantityModel value)
         {
-            return value.Meter * 100;
+            decimal result = value.Meter * 100;
+            redisData.RedisConnectionMultiplexer($"Meter", result.ToString());
+            return result;
         }
 
         public decimal CentimeterToMeter(QuantityModel value)
         {
-            return value.Centimeter / 100;
+            decimal result = value.Centimeter / 100;
+            redisData.RedisConnectionMultiplexer($"Centimeter", result.ToString());
+            return result;
         }
 
         public decimal KilogramToGram(QuantityModel value)
         {
-            return value.Kilogram * 1000;
+            decimal result = value.Kilogram * 1000;
+            redisData.RedisConnectionMultiplexer($"Meter", result.ToString());
+            return result;
         }
-
     }
 }
