@@ -34,10 +34,10 @@ namespace QuantityMeasurementBacken
             }
         }
     
-        public void ReceivingTheMessage()
+        public string ReceivingTheMessage()
         {
-            MessageQueue m = new MessageQueue();
-            MessageQueue MyQueue = null;
+            MessageQueue MyQueue = new MessageQueue();
+            string result = null;
             string path = @".\Private$\quantityQueue";
             try
             {
@@ -48,7 +48,7 @@ namespace QuantityMeasurementBacken
                     foreach (Message msg in message)
                     {
                         msg.Formatter = new XmlMessageFormatter(new string[] { "System.String,mscorlib" });
-                        string result = msg.Body.ToString();
+                        result = msg.Body.ToString();
                         Console.WriteLine(result);
                         MyQueue.Receive();
                     }
@@ -57,11 +57,13 @@ namespace QuantityMeasurementBacken
                 {
                     Console.WriteLine("No Message");
                 }
+                return result;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
+            return result;
         }
     }
 }

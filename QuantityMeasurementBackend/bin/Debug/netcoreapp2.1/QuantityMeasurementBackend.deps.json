@@ -377,7 +377,8 @@
       "Manager/1.0.0": {
         "dependencies": {
           "Model": "1.0.0",
-          "Repository": "1.0.0"
+          "Repository": "1.0.0",
+          "StackExchange.Redis": "2.1.30"
         },
         "runtime": {
           "Manager.dll": {}
@@ -387,6 +388,9 @@
         }
       },
       "Model/1.0.0": {
+        "dependencies": {
+          "StackExchange.Redis": "2.1.30"
+        },
         "runtime": {
           "Model.dll": {}
         },
@@ -396,7 +400,8 @@
       },
       "Repository/1.0.0": {
         "dependencies": {
-          "Model": "1.0.0"
+          "Model": "1.0.0",
+          "StackExchange.Redis": "2.1.30"
         },
         "runtime": {
           "Repository.dll": {}

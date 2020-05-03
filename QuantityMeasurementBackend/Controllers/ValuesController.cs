@@ -7,6 +7,7 @@ using Manager;
 using Microsoft.AspNetCore.Mvc;
 using Model;
 using QuantityMeasurementBacken;
+using Repository;
 
 namespace QuantityMeasurementBackend.Controllers
 {
@@ -22,6 +23,14 @@ namespace QuantityMeasurementBackend.Controllers
             this.manager = manager;
         }
 
+        [Route("RedisCache")]
+        [HttpGet]
+        public string GetRedisResult(string key)
+        {
+            RedisData redis = new RedisData();
+            return redis.Redis(key);
+        }
+
         [Route("FeetToInch")]
         [HttpPost]
         public IActionResult FeettoInch(QuantityModel value)
@@ -32,8 +41,6 @@ namespace QuantityMeasurementBackend.Controllers
             {
                 messagingQueue.SendingTheMessage("Feet", result);
                 return this.Ok(result);
-                
-
             }
             return this.BadRequest();
         }
@@ -76,8 +83,6 @@ namespace QuantityMeasurementBackend.Controllers
             {
                 messagingQueue.SendingTheMessage("Centimeter= ", result);
                 return this.Ok(result);
-                
-
             }
             return this.BadRequest();
         }
@@ -92,8 +97,6 @@ namespace QuantityMeasurementBackend.Controllers
             {
                 messagingQueue.SendingTheMessage("Kg= ", result);
                 return this.Ok(result);
-               
-
             }
             return this.BadRequest();
         }
@@ -108,8 +111,6 @@ namespace QuantityMeasurementBackend.Controllers
             {
                 messagingQueue.SendingTheMessage("Gram= ", result);
                 return this.Ok(result);
-               
-
             }
             return this.BadRequest();
         }
